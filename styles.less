@@ -1,44 +1,8 @@
-// /*
-//  * Your Stylesheet
-//  *
-//  * This stylesheet is loaded when Atom starts up and is reloaded automatically
-//  * when it is changed and saved.
-//  *
-//  * Add your own CSS or Less to fully customize Atom.
-//  * If you are unfamiliar with Less, you can read more about it here:
-//  * http://lesscss.org
-//  */
-//
-//
-// /*
-//  * Examples
-//  * (To see them, uncomment and save)
-//  */
-//
-// // style the background color of the tree view
-// .tree-view {
-//   // background-color: whitesmoke;
-// }
-//
-// // style the background and foreground colors on the atom-text-editor-element itself
-// atom-text-editor {
-//   // color: white;
-//   // background-color: hsl(180, 24%, 12%);
-// }
-//
-// // style UI elements inside atom-text-editor
-// atom-text-editor .cursor {
-//   // border-color: red;
-// }
-//
-// .entity.other.attribute-name {
-//     font-style: italic;
-// }
-
 atom-text-editor {
   font-style: normal;
   text-rendering: optimizeLegibility;
 }
+
 atom-text-editor::shadow {
   .string.quoted,
   .string.regexp {
@@ -49,17 +13,48 @@ atom-text-editor::shadow {
     vertical-align: baseline;
     font-family: 'flottflott';
     height: inherit;
-    font-size: 1.7em;
+    font-size: 1.5em;
     line-height: 1em;
   }
 
   .source.js.jsx.vue,
   .syntax--keyword,
-  .storage.type.function.arrow.js {
+  .storage.type.function.arrow.js,
+  .syntax--support.syntax--class.syntax--js,
+  .syntax--support.syntax--function.syntax--dom.syntax--js,
+  .syntax--entity.syntax--name.syntax--function.syntax--js,
+  .syntax--constant.syntax--language.syntax--boolean.syntax--true.syntax--js,
+  .syntax--constant.syntax--language.syntax--boolean.syntax--false.syntax--js,
+  .syntax--storage.syntax--type.syntax--const.syntax--js,
+  .syntax--storage.syntax--type.syntax--var.syntax--js {
     font-family: 'Operator Mono';
     font-style: normal;
     font-weight: bold;
+    font-size: 1em;
   }
+
+  .syntax--entity.syntax--other.syntax--attribute-name.syntax--html {
+    font-family: 'Operator Mono';
+    font-style: normal;
+    font-weight: bold;
+    color: #EF5350;
+  }
+
+  .syntax--punctuation.syntax--definition.syntax--function.syntax--body.syntax--begin.syntax--bracket.syntax--curly.syntax--js,
+  .syntax--punctuation.syntax--section.syntax--scope.syntax--begin.syntax--js,
+  .syntax--punctuation.syntax--section.syntax--scope.syntax--end.syntax--js,
+  .syntax--meta.syntax--delimiter.syntax--object.syntax--comma.syntax--js,
+  .syntax--meta.syntax--brace.syntax--square.syntax--js,
+  .syntax--meta.syntax--brace.syntax--curly.syntax--js {
+    color: #fff;
+  }
+
+  .syntax--storage.syntax--type.syntax--class.syntax--jsdoc {
+    font-size: 1em;
+    font-weight: bold;
+    font-family: 'Operator Mono';
+  }
+
   .syntax--variable.syntax--language{
     font-family: 'Operator Mono';
     font-style: normal;
@@ -67,79 +62,12 @@ atom-text-editor::shadow {
     color: #E91E63;
   }
 
-  .syntax--storage.syntax--type.syntax--function.syntax--js {
-    font-size: 1.1em;
-    line-height: 1.5em;
-  }
-
-  .syntax--async {
-    font-weight: normal;
-    font-size: 1.8em;
-    font-style: normal;
-  }
-
-  .syntax--const {
-    font-family: 'Operator Mono';
-    font-size: 1.1em;
-    font-style: normal;
-    font-weight: bold;
-  }
-
-  .syntax--storage.syntax--modifier.syntax--js {
-    font-family: 'Operator Mono';
-    font-size: 1.2em;
-    font-style: normal;
-    font-weight: bold;
-    color: #E91E63;
-  }
-
-  .syntax--variable.syntax--parameter.syntax--function.syntax--js {
-    font-family: 'Operator Mono';
-    font-size: 1em;
-    font-style: normal;
-    font-weight: bold;
-  }
-
-  .syntax--function.syntax--js {
-    font-family: 'Operator Mono';
-    font-size: 1em;
-    font-style: normal;
-    font-weight: bold;
-  }
-
-  .syntax--meta.syntax--arguments.syntax--js {
-    font-family: 'Operator Mono';
-    font-size: 1em;
-    font-style: normal;
-    font-weight: bold;
-  }
-
-  .syntax--string.syntax--quoted.syntax--single.syntax--js {
-    font-family: Menlo, Consolas, 'DejaVu Sans Mono', monospace !important;
-    font-style: italic;
-    font-weight: normal;
-  }
-
-  .syntax--storage.syntax--type.syntax--var.syntax--js {
-    font-family: 'Operator Mono';
-    font-size: 1.1em;
-    font-style: normal;
-    font-weight: bold;
-  }
   .syntax--arrow {
     font-size: 1em;
   }
-  // .syntax--entity {
-  //   font-family: 'Operator Mono';
-  //   font-style: normal;
-  //   font-weight: bold;
-  //   font-size: 1em;
-  // }
-
-  .string.unquoted.js {
-    color: #CDD3DE;
-  }
-  .entity.name {
-    font-style: italic;
-  }
 }
+//
+//   .string.unquoted.js {
+//     color: #CDD3DE;
+//   }
+// }
