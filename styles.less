@@ -20,20 +20,38 @@ atom-text-editor::shadow {
   .syntax--support.syntax--class.syntax--js,
   .syntax--support.syntax--function.syntax--js,
   .source.js.jsx.vue > .keyword.control.flow.js,
+  .syntax--entity.syntax--name.syntax--tag.syntax--css,
   .syntax--storage.syntax--type.syntax--var.syntax--js,
   .syntax--storage.syntax--type.syntax--const.syntax--js,
   .syntax--support.syntax--function.syntax--dom.syntax--js,
   .syntax--entity.syntax--name.syntax--function.syntax--js,
   .syntax--storage.syntax--type.syntax--class.syntax--jsdoc,
+  .syntax--support.syntax--type.syntax--property-name.syntax--css,
   .syntax--entity.syntax--other.syntax--attribute-name.syntax--html,
+  .syntax--entity.syntax--name.syntax--tag.syntax--other.syntax--html,
   .syntax--constant.syntax--language.syntax--boolean.syntax--true.syntax--js,
-  .syntax--constant.syntax--language.syntax--boolean.syntax--false.syntax--js {
+  .syntax--constant.syntax--language.syntax--boolean.syntax--false.syntax--js,
+  .syntax--entity.syntax--other.syntax--attribute-name.syntax--id.syntax--css,
+  .syntax--entity.syntax--other.syntax--attribute-name.syntax--class.syntax--css,
+  .syntax--entity.syntax--name.syntax--tag.syntax--block.syntax--any.syntax--html,
+  .syntax--entity.syntax--name.syntax--tag.syntax--inline.syntax--any.syntax--html {
     vertical-align: baseline;
     font-weight: bold;
     font-family: 'Operator Mono';
     height: inherit;
     font-size: 1.1em;
     line-height: 1em;
+  }
+
+  .syntax--constant.syntax--numeric.syntax--css,
+  .syntax--constant.syntax--other.syntax--rgb-value.syntax--css,
+  .syntax--keyword.syntax--other.syntax--unit.syntax--vh.syntax--css,
+  .syntax--keyword.syntax--other.syntax--unit.syntax--px.syntax--css,
+  .syntax--keyword.syntax--other.syntax--unit.syntax--em.syntax--css,
+  .syntax--punctuation.syntax--definition.syntax--constant.syntax--css,
+  .syntax--support.syntax--constant.syntax--property-value.syntax--css,
+  .syntax--keyword.syntax--other.syntax--unit.syntax--percentage.syntax--css {
+    color: #6af699;
   }
 
   .syntax--meta.syntax--brace.syntax--curly.syntax--js,
@@ -54,6 +72,10 @@ atom-text-editor::shadow {
   .syntax--variable.syntax--language.syntax--js,
   .syntax--constant.syntax--language.syntax--boolean {
     color: #ffbf7a;
+  }
+
+  .syntax--support.syntax--type.syntax--property-name.syntax--css, {
+    color: #4ff2f8;
   }
 
   .syntax--variable.syntax--other.syntax--object.syntax--js,
