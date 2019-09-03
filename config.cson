@@ -12,8 +12,9 @@
   "exception-reporting":
     userId: "cafbd561-a1a0-43b3-89d8-68d30195c66c"
   "linter-eslint":
-    fixOnSave: true
-    ignoreFixableRulesWhileTyping: true
+    autofix:
+      fixOnSave: true
+      ignoreFixableRulesWhileTyping: true
     lintHtmlFiles: true
     scopes: [
       "source.js"
